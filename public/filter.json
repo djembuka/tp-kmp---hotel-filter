@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "type": "period",
+      "data": [{ "id": "", "name": "No result" }]
+    },
+    {
+      "type": "meal",
+      "data": [{ "id": "", "name": "No result" }]
+    },
+    {
+      "type": "room",
+      "data": [{ "id": "", "name": "No result" }]
+    }
+  ]
+}

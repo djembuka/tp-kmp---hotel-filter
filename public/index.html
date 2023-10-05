@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="<%= BASE_URL %>hotel-rooms.css" rel="stylesheet" />
+    <link href="<%= BASE_URL %>swiper.min.css" rel="stylesheet" />
+  </head>
+  <body style="padding: 50px">
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="hotelFilter"></div>
+
+    <div class="b-hotel-rooms">
+      <div
+        style="background-image: url('/for-business/images/right-arrow.svg')"
+        id="roomsSwiperNext"
+        tabindex="0"
+        role="button"
+        aria-label="Next slide"
+        aria-disabled="true"
+      ></div>
+      <div
+        style="background-image: url('/for-business/images/left-arrow.svg')"
+        id="roomsSwiperPrev"
+        tabindex="0"
+        role="button"
+        aria-label="Previous slide"
+        aria-disabled="false"
+      ></div>
+
+      <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+          <h3 class="i-size-S">
+            <span class="b-heading-content">Номера</span>
+            <span href="#" class="b-heading-dropdown">
+              <a href=""
+                >на
+                <span class="b-heading-dropdown-title">1 ночь</span>
+              </a>
+              <span class="b-heading-dropdown-body">
+                <a href="/markup/hotel-prices/rooms-data.json">1 ночь</a>
+                <a href="/markup/hotel-prices/rooms-data.json">7 ночей</a>
+                <a href="/markup/hotel-prices/rooms-data.json">10 ночей</a>
+              </span>
+            </span>
+          </h3>
+        </div>
+      </div>
+
+      <div class="swiper-container"></div>
+
+      <div class="b-hotel-table" id="hotelTable"></div>
+    </div>
+    <script src="<%= BASE_URL %>store.js"></script>
+    <script src="<%= BASE_URL %>swiper.min.js"></script>
+    <script src="<%= BASE_URL %>hotel-rooms.js"></script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "type": "period",
+      "data": [
+        {
+          "id": "10",
+          "days": 10
+        },
+        {
+          "id": "20",
+          "days": 20
+        },
+        {
+          "id": "30",
+          "days": 54
+        }
+      ]
+    },
+    {
+      "type": "meal",
+      "data": [
+        {
+          "id": "16",
+          "name": "RO (Room only)"
+        },
+        {
+          "id": "26",
+          "name": "EP (European Plan)"
+        }
+      ]
+    },
+    {
+      "type": "room",
+      "data": [
+        {
+          "id": "69",
+          "name": "SGL (Single)"
+        },
+        {
+          "id": "79",
+          "name": "DBL (Double)"
+        },
+        {
+          "id": "89",
+          "name": "TRPL (Triple)"
+        }
+      ]
+    }
+  ]
+}
